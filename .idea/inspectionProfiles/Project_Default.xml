@@ -1,0 +1,195 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AnonymousClassComplexity" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_limit" value="3" />
+    </inspection_tool>
+    <inspection_tool class="ArrayCanBeReplacedWithEnumValues" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES" />
+    <inspection_tool class="ArrayCreationWithoutNewKeyword" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="AssignmentToSuperclassField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="BadOddness" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="BigDecimalEquals" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="BoundedWildcard" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES" />
+    <inspection_tool class="CastCanBeReplacedWithVariable" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES" />
+    <inspection_tool class="ClassMayBeInterface" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES" />
+    <inspection_tool class="ClassNameDiffersFromFileName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ClassWithOnlyPrivateConstructors" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConditionalCanBeOptional" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="ConfusingFloatingPointLiteral" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConfusingOctalEscape" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ConstantExpression" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
+      <option name="skipIfContainsReferenceExpression" value="true" />
+    </inspection_tool>
+    <inspection_tool class="ConstantMathCall" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ControlFlowStatementWithoutBraces" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="CustomRegExpInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myConfigurations">
+        <list>
+          <RegExpInspectionConfiguration>
+            <option name="name" value="SafeCompletableFuture" />
+            <option name="problemDescriptor" value="Use SafeCompletableFuture over CompletableFuture as this handles exceptions correctly" />
+            <option name="suppressId" value="UnsafeCompletableFuture" />
+            <option name="uuid" value="382adfcc-1789-3694-acc7-52c751926b0d" />
+            <option name="patterns">
+              <list>
+                <InspectionPattern>
+                  <option name="regExp" value="\bCompletableFuture" />
+                  <option name="_fileType" value="JAVA" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="replacement" value="SafeCompletableFuture" />
+                </InspectionPattern>
+              </list>
+            </option>
+          </RegExpInspectionConfiguration>
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="DeclareCollectionAsInterface" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreLocalVariables" value="false" />
+      <option name="ignorePrivateMethodsAndFields" value="false" />
+    </inspection_tool>
+    <inspection_tool class="DiamondCanBeReplacedWithExplicitTypeArguments" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="DollarSignInName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="EqualsCalledOnEnumConstant" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ExceptionNameDoesntEndWithException" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="FieldAccessNotGuarded" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="FieldNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="FillPermitsList" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="FinalMethod" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="IncorrectFormatting" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="LambdaBodyCanBeCodeBlock" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="LambdaCanBeReplacedWithAnonymous" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="LambdaParameterTypeCanBeSpecified" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES" />
+    <inspection_tool class="LambdaUnfriendlyMethodOverload" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="LimitedScopeInnerClass" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="ListenerMayUseAdapter" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="checkForEmptyMethods" value="true" />
+    </inspection_tool>
+    <inspection_tool class="LocalCanBeFinal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="REPORT_VARIABLES" value="true" />
+      <option name="REPORT_PARAMETERS" value="false" />
+      <option name="REPORT_CATCH_PARAMETERS" value="false" />
+      <option name="REPORT_FOREACH_PARAMETERS" value="false" />
+      <option name="REPORT_IMPLICIT_FINALS" value="false" />
+      <option name="REPORT_PATTERN_VARIABLES" value="false" />
+    </inspection_tool>
+    <inspection_tool class="LocalVariableNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_ignoreForLoopParameters" value="false" />
+      <option name="m_ignoreCatchParameters" value="false" />
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="20" />
+    </inspection_tool>
+    <inspection_tool class="LongLine" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MethodRefCanBeReplacedWithLambda" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="MissortedModifiers" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
+      <option name="m_requireAnnotationsFirst" value="true" />
+    </inspection_tool>
+    <inspection_tool class="MisspelledMethodName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MoveFieldAssignmentToInitializer" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="MultiCatchCanBeSplit" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="MultipleVariablesInDeclaration" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="NewMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonExceptionNameEndsWithException" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonFinalFieldInImmutable" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonFinalGuard" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonFinalUtilityClass" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ObjectsEqualsCanBeSimplified" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="OptionalToIf" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="OverlyStrongTypeCast" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreInMatchingInstanceof" value="false" />
+    </inspection_tool>
+    <inspection_tool class="PackageNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z]*" />
+      <option name="m_minLength" value="3" />
+      <option name="m_maxLength" value="16" />
+    </inspection_tool>
+    <inspection_tool class="ParameterNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_minLength" value="1" />
+      <option name="m_maxLength" value="20" />
+    </inspection_tool>
+    <inspection_tool class="ParametersPerConstructor" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreScope" value="PROTECTED" />
+      <option name="m_limit" value="4" />
+    </inspection_tool>
+    <inspection_tool class="ParametersPerMethod" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="m_limit" value="4" />
+    </inspection_tool>
+    <inspection_tool class="PreviewFeature" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES" />
+    <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PublicMethodNotExposedInInterface" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+      <option name="onlyWarnIfContainingClassImplementsAnInterface" value="true" />
+    </inspection_tool>
+    <inspection_tool class="QuestionableName" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="nameString" value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var" />
+    </inspection_tool>
+    <inspection_tool class="ReassignedVariable" enabled="false" level="TEXT ATTRIBUTES" enabled_by_default="false" editorAttributes="INFO_ATTRIBUTES" />
+    <inspection_tool class="RecordCanBeClass" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="RedundantFieldInitialization" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ReplaceAssignmentWithOperatorAssignment" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
+      <option name="ignoreLazyOperators" value="true" />
+      <option name="ignoreObscureOperators" value="false" />
+    </inspection_tool>
+    <inspection_tool class="ReturnSeparatedFromComputation" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <searchConfiguration name="Missing Validator" description="Validator is required for parameter based functions.&#10;Use ValidObject or similar to validate argument " suppressId="no-validation-needed" text="public $ReturnType$ $Method$($ParameterType$ $Parameter$){&#10;    $Validator$;&#10;}" recursive="true" caseInsensitive="false" type="JAVA" pattern_context="member">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="ReturnType" minCount="0" within="" contains="" />
+        <constraint name="Method" within="" contains="" />
+        <constraint name="ParameterType" regexp="^(?!boolean).+" within="" contains="" />
+        <constraint name="Parameter" maxCount="2147483647" target="true" within="" contains="" />
+        <constraint name="Validator" regexp="^(?!Valid).+" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="Missing Validator" text="default $ReturnType$ $Method$($ParameterType$ $Parameter$){&#10;    $Validator$;&#10;}" recursive="true" caseInsensitive="false" type="JAVA" pattern_context="member">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="ReturnType" minCount="0" within="" contains="" />
+        <constraint name="Method" within="" contains="" />
+        <constraint name="ParameterType" regexp="^(?!boolean).+" within="" contains="" />
+        <constraint name="Parameter" maxCount="2147483647" target="true" within="" contains="" />
+        <constraint name="Validator" regexp="^(?!Valid).+" within="" contains="" />
+      </searchConfiguration>
+    </inspection_tool>
+    <inspection_tool class="SimplifiableAnnotation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SimplifiableIfStatement" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES">
+      <option name="DONT_WARN_ON_TERNARY" value="false" />
+    </inspection_tool>
+    <inspection_tool class="SingleElementAnnotation" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="SingleStatementInBlock" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="StandardVariableNames" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="StreamToLoop" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="SwitchLabeledRuleCanBeCodeBlock" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="ThrowablePrintStackTrace" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="TypeMayBeWeakened" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="useRighthandTypeAsWeakestTypeInAssignments" value="true" />
+      <option name="useParameterizedTypeForCollectionMethods" value="true" />
+      <option name="doNotWeakenToJavaLangObject" value="true" />
+      <option name="onlyWeakentoInterface" value="true" />
+      <option name="doNotWeakenInferredVariableType" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnclearBinaryExpression" enabled="true" level="WARNING" enabled_by_default="true" editorAttributes="WARNING_ATTRIBUTES" />
+    <inspection_tool class="UnknownGuard" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnnecessarilyQualifiedInnerClassAccess" enabled="false" level="INFORMATION" enabled_by_default="false">
+      <option name="ignoreReferencesNeedingImport" value="false" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryConstantArrayCreationExpression" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnnecessaryConstructor" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnnecessaryExplicitNumericCast" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnqualifiedFieldAccess" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnqualifiedMethodAccess" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UpperCaseFieldNameNotConstant" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UtilityClassWithPublicConstructor" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UtilityClassWithoutPrivateConstructor" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+      <option name="ignoreClassesWithOnlyMain" value="false" />
+    </inspection_tool>
+    <inspection_tool class="VarargParameter" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="ab4d4cc2-b411-34a3-8a9d-dc4719d8922e" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
