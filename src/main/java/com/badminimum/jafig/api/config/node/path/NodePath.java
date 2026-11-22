@@ -24,7 +24,7 @@ public sealed interface NodePath permits TypedNodePath, NodePathImpl {
     }
 
     default NodePath child(String... more) throws NodePathException {
-        return NodePaths.of(more);
+        return this.child(NodePaths.of(more));
     }
 
     default NodePath child(NodePath other) {

@@ -1,5 +1,6 @@
 package com.badminimum.jafig.api.config.exception;
 
+import com.badminimum.jafig.api.config.node.Node;
 import com.google.common.reflect.TypeToken;
 import org.jspecify.annotations.NullMarked;
 
@@ -41,5 +42,15 @@ public class TypeException extends RuntimeException {
         return new TypeException("Type safety violation: Incompatible types. Expected %s but received %s.",
                 expected.toString(),
                 received.toString());
+    }
+
+    public static <E extends Node, R extends Node> TypeException NOT_RIGHT_NODE_KIND(Class<E> expected,
+            Class<R> received) {
+        Objects.requireNonNull(expected);
+        Objects.requireNonNull(received);
+
+        return new TypeException("Type safety violation: Not right node kind. Expected %s but received %s.",
+                expected.getSimpleName(),
+                received.getSimpleName());
     }
 }
