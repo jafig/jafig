@@ -7,5 +7,5 @@ import java.util.function.Function;
 
 @FunctionalInterface
 @NullMarked
-public interface EnvAdapter<T> extends Function<String, @Nullable T> {
+public interface EnvAdapter<T extends @Nullable Object> extends Function<String, @Nullable T> {
 }

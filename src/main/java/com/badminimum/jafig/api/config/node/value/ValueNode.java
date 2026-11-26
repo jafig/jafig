@@ -1,5 +1,6 @@
 package com.badminimum.jafig.api.config.node.value;
 
+import com.badminimum.jafig.api.config.env.EnvBinding;
 import com.badminimum.jafig.api.config.node.Node;
 import com.badminimum.jafig.api.config.node.path.TypedNodePath;
 import com.badminimum.jafig.api.config.serialization.JafigSerializer;
@@ -25,5 +26,5 @@ public non-sealed interface ValueNode<T> extends Node {
 
     Optional<TypeToken<? extends JafigSerializer<T>>> serializer();
 
-    Optional<EnvBinding<T>> env();
+    Optional<EnvBinding<@Nullable T>> env();
 }

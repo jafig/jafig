@@ -1,10 +1,10 @@
 package com.badminimum.jafig.impl.config.node.value;
 
 import com.badminimum.jafig.api.config.env.EnvAdapter;
+import com.badminimum.jafig.api.config.env.EnvBinding;
 import com.badminimum.jafig.api.config.node.builder.ValueNodeBuilder;
 import com.badminimum.jafig.api.config.node.path.NodePath;
 import com.badminimum.jafig.api.config.node.path.TypedNodePath;
-import com.badminimum.jafig.api.config.node.value.EnvBinding;
 import com.badminimum.jafig.api.config.node.value.ValueNode;
 import com.badminimum.jafig.api.config.serialization.JafigSerializer;
 import com.badminimum.jafig.api.config.validator.Validator;

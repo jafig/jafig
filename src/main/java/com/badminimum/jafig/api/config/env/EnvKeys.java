@@ -9,28 +9,27 @@ import java.util.Collection;
 import java.util.Locale;
 import java.util.stream.Stream;
 
-// All nulls in DefinedEnv are the culprits for DataFlowIssue warnings, but they are handled correctly in the code.
-@SuppressWarnings({"unused", "DataFlowIssue"})
+// All nulls in EnvBinding are the culprits for DataFlowIssue warnings, but they are handled correctly in the code.
 @NullMarked
 public final class EnvKeys {
 
-    public static final DefinedEnv<String> DEBUGGER_ID = new DefinedEnv<>("DEBUGGER_ID", (String t) -> t);
-    public static final DefinedEnv<Boolean> DEBUGGING_ENABLED = new DefinedEnv<>("DEBUGGER_ENABLED",
+    public static final EnvBinding<String> DEBUGGER_ID = new EnvBinding<>("DEBUGGER_ID", (String t) -> t);
+    public static final EnvBinding<Boolean> DEBUGGING_ENABLED = new EnvBinding<>("DEBUGGER_ENABLED",
             Boolean::parseBoolean);
-    public static final DefinedEnv<@Nullable Integer> DISPLAY = new DefinedEnv<>("DISPLAY", (String input) -> {
+    public static final EnvBinding<@Nullable Integer> DISPLAY = new EnvBinding<>("DISPLAY", (String input) -> {
         try {
             return Integer.parseInt(input.substring(1));
         } catch (NumberFormatException e) {
             return null;
         }
     });
-    public static final DefinedEnv<@Nullable Path> EDITOR = DefinedEnv.path("EDITOR");
-    public static final DefinedEnv<@Nullable Path> HOME = DefinedEnv.path("HOME");
-    public static final DefinedEnv<@Nullable LangResult> LANG = new DefinedEnv<>("LANG", (String input) -> {
+    public static final EnvBinding<@Nullable Path> EDITOR = EnvBinding.path("EDITOR");
+    public static final EnvBinding<@Nullable Path> HOME = EnvBinding.path("HOME");
+    public static final EnvBinding<@Nullable LangResult> LANG = new EnvBinding<>("LANG", (String input) -> {
         String[] split = input.split("\\.", 2);
         return (split.length != 2) ? null : new LangResult(Locale.of(split[0]), split[1]);
     });
-    public static final DefinedEnv<@Nullable Collection<Path>> PATHS = new DefinedEnv<>("PATH", (String input) -> {
+    public static final EnvBinding<@Nullable Collection<Path>> PATHS = new EnvBinding<>("PATH", (String input) -> {
         var split = input.split(";");
         try {
             return Stream.of(split).map((String stringPath) -> {
@@ -44,8 +43,8 @@ public final class EnvKeys {
             return null;
         }
     });
-    public static final DefinedEnv<@Nullable Path> SHELL = DefinedEnv.path("SHELL");
-    public static final DefinedEnv<String> USER = new DefinedEnv<>("USER", (String t) -> t);
+    public static final EnvBinding<@Nullable Path> SHELL = EnvBinding.path("SHELL");
+    public static final EnvBinding<String> USER = new EnvBinding<>("USER", (String t) -> t);
 
     private EnvKeys() {
 
