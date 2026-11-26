@@ -6,7 +6,7 @@ import com.google.common.reflect.TypeToken;
 import org.jspecify.annotations.NullMarked;
 
 @NullMarked
-public class TypedNodePathImpl<T> extends NodePathImpl implements TypedNodePath<T> {
+public class TypedNodePathImpl<T> extends AbstractNodePath implements TypedNodePath<T> {
     private final TypeToken<T> type;
 
     public TypedNodePathImpl(TypeToken<T> typeToken, ImmutableList<String> keys) {

@@ -13,12 +13,23 @@ import com.google.common.collect.ImmutableMap;
 import java.util.Optional;
 import java.util.function.Consumer;
 
-public record ConfigImpl(ImmutableMap<NodePath, Node> nodes) implements Config {
+@SuppressWarnings("ClassCanBeRecord")
+public class ConfigImpl implements Config {
+    private final ImmutableMap<NodePath, Node> nodes;
+
+    public ConfigImpl(ImmutableMap<NodePath, Node> nodes) {
+        this.nodes = nodes;
+    }
 
     @Override
     public Optional<Node> node(NodePath nodePath) {
         final Node node = this.nodes.get(nodePath);
         return Optional.ofNullable(node);
+    }
+
+    @Override
+    public ImmutableMap<NodePath, Node> nodes() {
+        return this.nodes;
     }
 
     @Override

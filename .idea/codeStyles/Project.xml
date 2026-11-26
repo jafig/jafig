@@ -4,6 +4,8 @@
       <option name="ANNOTATION_PARAMETER_WRAP" value="1" />
       <option name="ENUM_FIELD_ANNOTATION_WRAP" value="2" />
       <option name="ALIGN_MULTILINE_TEXT_BLOCKS" value="true" />
+      <option name="PRESERVE_MODULE_IMPORTS" value="false" />
+      <option name="DELETE_UNUSED_MODULE_IMPORTS" value="true" />
     </JavaCodeStyleSettings>
     <codeStyleSettings language="JAVA">
       <option name="KEEP_LINE_BREAKS" value="false" />

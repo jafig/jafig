@@ -1,21 +1,20 @@
-package com.badminimum.jafig.api.config.node.value;
+package com.badminimum.jafig.api.config.node.builder;
 
 import com.badminimum.jafig.api.config.env.EnvAdapter;
+import com.badminimum.jafig.api.config.node.value.ValueNode;
+import com.badminimum.jafig.api.config.serialization.JafigSerializer;
 import com.badminimum.jafig.api.config.validator.Validator;
+import com.google.common.reflect.TypeToken;
 import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
-import java.util.Collection;
-
 @NullMarked
-public interface ValueNodeBuilder<T> {
-    ValueNodeBuilder<T> validator(Validator<@Nullable T> validator);
-
+public interface ValueNodeBuilder<T> extends NodeBuilder {
     ValueNodeBuilder<T> defaultValue(@Nullable T defaultValue);
 
-    ValueNodeBuilder<T> comments(String... comments);
+    ValueNodeBuilder<T> validator(Validator<@Nullable T> validator);
 
-    ValueNodeBuilder<T> comments(Collection<String> comments);
+    ValueNodeBuilder<T> serializer(TypeToken<? extends JafigSerializer<T>> serializer);
 
     EnvAdapterStep<T> env(String variable);
 

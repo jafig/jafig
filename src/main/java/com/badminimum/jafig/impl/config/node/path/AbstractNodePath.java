@@ -6,10 +6,10 @@ import org.jspecify.annotations.NullMarked;
 import org.jspecify.annotations.Nullable;
 
 @NullMarked
-public non-sealed class NodePathImpl implements NodePath {
-    private final ImmutableList<String> keys;
+public abstract non-sealed class AbstractNodePath implements NodePath {
+    protected final ImmutableList<String> keys;
 
-    public NodePathImpl(ImmutableList<String> keys) {
+    public AbstractNodePath(ImmutableList<String> keys) {
         this.keys = keys;
     }
 
